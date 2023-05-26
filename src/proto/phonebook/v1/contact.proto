@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package phonebook.v1;
+
+import "google/protobuf/timestamp.proto";
+import "phonebook/v1/socialplatform.proto";
+import "phonebook/v1/emergencycontactdetails.proto";
+import "phonebook/v1/address.proto";
+
+message Contact {
+    string first_name = 1;
+    string last_name = 2;
+    optional string email = 3;
+    optional string phone_number = 4;
+    repeated SocialPlatform social_platforms = 5;
+    optional EmergencyContactDetails emergency_contact = 6;
+    optional Address address = 7;
+    bool is_blocked = 8;
+    bool is_favorite = 9;
+    google.protobuf.Timestamp created_at = 10;
+    google.protobuf.Timestamp updated_at = 11;
+    optional google.protobuf.Timestamp deleted_at = 12;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package phonebook.v1;
+
+message EmergencyContactDetails {
+    Relationships relationship = 1;
+    optional string custom_label = 2;
+
+    enum Relationships {
+        BROTHER = 0;
+        MOTHER = 1;
+        SISTER = 2;
+        FATHER = 3;
+        FRIEND = 4;
+        COUSIN = 5;
+    }
+}

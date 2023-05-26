@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package phonebook.v1;
+
+message Address {
+    string address_line_1 = 1;
+    optional string address_line_2 = 2;
+    optional string postal_code = 3;
+    optional string city = 4;
+    optional string state = 5;
+    optional string country = 6;
+}

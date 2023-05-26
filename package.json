@@ -1,0 +1,34 @@
+{
+  "name": "myaddressbook",
+  "version": "1.0.0",
+  "description": "Data serialization with Protobuf and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build:proto": "scripts/protoc-generate.sh",
+    "dev": "npx ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibywaks/phonebook.git"
+  },
+  "keywords": [
+    "Data",
+    "Serialization",
+    "Protobuf",
+    "TypeScript"
+  ],
+  "author": "Ibiyemi Adewakun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibywaks/myaddressbook/issues"
+  },
+  "homepage": "https://github.com/ibywaks/myaddressbook#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "ts-protoc-gen": "^0.15.0"
+  }
+}

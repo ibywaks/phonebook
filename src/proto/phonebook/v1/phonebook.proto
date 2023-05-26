@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package phonebook.v1;
+
+import "phonebook/v1/contact.proto";
+
+message PhoneBook {
+    repeated Contact contact = 1;
+}

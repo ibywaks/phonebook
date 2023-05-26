@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package phonebook.v1;
+
+message SocialPlatform {
+    SocialPlatformOptions platform = 1;
+    string profile = 2;
+    optional string profile_url = 3;
+
+    enum SocialPlatformOptions {
+        WHATSAPP = 0;
+        FACEBOOK = 1;
+        INSTAGRAM = 2;
+    }
+}
